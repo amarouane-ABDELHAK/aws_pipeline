@@ -60,16 +60,6 @@ resource "aws_codepipeline" "codepipeline" {
 
 
 
-
-
-resource "aws_codebuild_source_credential" "github_token" {
-  auth_type   = "PERSONAL_ACCESS_TOKEN"
-  server_type = "GITHUB"
-  token       = var.github_token
-}
-
-
-
 resource "aws_codebuild_project" "build_pipeline" {
   name         = "${var.prefix}-build-pipeline"
   service_role = var.codebuild_role_arn

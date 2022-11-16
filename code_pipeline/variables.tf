@@ -1,7 +1,3 @@
-variable "github_token" {
-
-}
-
 variable "codepipline_bucket_name" {}
 
 variable "codepipeline_role_arn" {
