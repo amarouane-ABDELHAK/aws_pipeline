@@ -1,4 +1,3 @@
-variable "github_token" {}
 variable "codepipline_bucket_name" {}
 variable "prefix" {}
 variable "github_owner_name" {}

@@ -30,7 +30,6 @@ module "codepipeline" {
    codepipeline_role_arn = module.iam_codepipeline.codepipeline_role_arn
    codepipline_bucket_name = var.codepipline_bucket_name
    connection_id = var.connection_id
-   github_token = var.github_token
    prefix = var.prefix
    region = var.aws_region
    branch_name = var.branch_name
